@@ -7,15 +7,15 @@
              xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
-    <em:id>closetab@tynn.addons.mozilla.org</em:id>
+    <em:id>close-tab-button@tynn.addons.mozilla.org</em:id>
     <em:type>2</em:type>
     <em:bootstrap>true</em:bootstrap>
 
-    <em:name>Close Tab</em:name>
+    <em:name>Close Tab Button</em:name>
     <em:version>1.0</em:version>
     <em:description>Adds an ×-PageAction to close the tab</em:description>
     <em:creator>Christian Schmitz &lt;tynn.dev@gmail.com&gt;</em:creator>
-    <em:homepageURL></em:homepageURL>
+    <em:homepageURL>https://addons.mozilla.org/de/android/addon/close-tab-button/</em:homepageURL>
 
     <!-- Mobile -->
     <em:targetApplication>
@@ -31,7 +31,7 @@
     <em:localized>
       <Description>
         <em:locale>de</em:locale>
-        <em:name>Tab schließen</em:name>
+        <em:name>Tab schließen Knopf</em:name>
         <em:description>
           Fügt der Addressleiste einen ×-Knopf zum Schließen des Tabs hinzu
         </em:description>
@@ -41,7 +41,7 @@
     <em:localized>
         <Description>
             <em:locale>en</em:locale>
-            <em:name>Close Tab</em:name>
+            <em:name>Close Tab Button</em:name>
             <em:description>
               Adds an ×-PageAction to close the tab
             </em:description>
