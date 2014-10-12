@@ -4,9 +4,10 @@
 "use strict";
 
 Components.utils.import("resource://gre/modules/Services.jsm");
+Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 var PageActions;
 try {
-	Components.utils.import("resource://gre/modules/PageActions.jsm");
+	Components.utils.import("resource://gre/modules/PageActions.jsm"); /* ↑ */
 } catch(e) {
 	const Ci = Components.interfaces;
 	PageActions = {
@@ -28,19 +29,23 @@ try {
 	};
 }
 
-let UUID, RAND = "";
 const BUNDLE = "chrome://closetab/locale/closetab.properties";
+XPCOMUtils.defineLazyGetter(this, "Strings", function() {
+	return Services.strings.createBundle(BUNDLE);
+});
+
+
 const windowListener = {
 	onOpenWindow: PageActions.onOpenWindowProxy || function(aWindow) { updatePageAction(); },
 	onCloseWindow: function(aWindow) {},
 	onWindowTitleChange: function(aWindow, aTitle) {}
 };
 
+let UUID;
 function updatePageAction(aUnload) {
 	if (UUID) PageActions.remove(UUID);
-	let stringBundle = Services.strings.createBundle(BUNDLE + RAND);
 	UUID = !aUnload && PageActions.add({
-		title: stringBundle.GetStringFromName("Close Tab"),
+		title: Strings.GetStringFromName("Close Tab"),
 		icon: "drawable://tab_close",
 		clickCallback: function() {
 			let window = Services.wm.getMostRecentWindow("navigator:browser");
@@ -51,7 +56,6 @@ function updatePageAction(aUnload) {
 
 
 function startup(aData, aReason) {
-	RAND = "?" + Math.random();
 	Services.wm.addListener(windowListener);
 	updatePageAction(); /* ↑ */
 }
