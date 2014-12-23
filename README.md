@@ -6,7 +6,11 @@ This is an Add-on for Firefox for Android.
 The files of this addon are licensed under the
 [MPL 2.0](http://mozilla.org/MPL/2.0/).
 
-Translations are taken from [Transvision](http://transvision.mozfr.org/).
+The `icon.png` is based on the `tab_close.png` icon found with the
+Firefox for Android source base.
+
+Translations are taken from or validated with
+[Transvision](http://transvision.mozfr.org/).
 
 If enabled, a PageAction will be added to close the tab.
 This PageAction is persistent over all tabs.

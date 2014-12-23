@@ -12,7 +12,7 @@
     <em:bootstrap>true</em:bootstrap>
 
     <em:name>Close Tab Button</em:name>
-    <em:version>1.0.1</em:version>
+    <em:version>1.0.2</em:version>
     <em:description>Adds an ×-PageAction to close the tab</em:description>
     <em:creator>Christian Schmitz &lt;tynn.dev@gmail.com&gt;</em:creator>
     <em:homepageURL>https://addons.mozilla.org/de/android/addon/close-tab-button/</em:homepageURL>
@@ -22,7 +22,7 @@
       <Description>
         <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
         <em:minVersion>27.0</em:minVersion>
-        <em:maxVersion>34.0a2</em:maxVersion>
+        <em:maxVersion>36.0a2</em:maxVersion>
       </Description>
     </em:targetApplication>
 
