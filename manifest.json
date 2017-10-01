@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+
+  "name": "__MSG_Name__",
+  "description": "__MSG_Description__",
+  "homepage_url": "https://addons.mozilla.org/de/android/addon/close-tab-button/",
+
+  "default_locale": "en",
+
+  "icons": {
+    "32": "icon.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "close-tab-button@tynn.addons.mozilla.org"
+    }
+  },
+
+  "page_action": {
+    "default_icon": "icon.png",
+    "default_title": "__MSG_CloseTab__"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

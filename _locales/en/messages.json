@@ -1,0 +1,14 @@
+{
+  "Name" :{
+    "message": "Close Tab Button",
+    "description": ""
+  },
+  "Description" :{
+    "message": "Adds an ×-PageAction to close the tab",
+    "description": ""
+  },
+  "CloseTab": {
+    "message": "CloseTab",
+    "description": ""
+  }
+}

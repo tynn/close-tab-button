@@ -1,0 +1,14 @@
+{
+  "Name" :{
+    "message": "Tab schließen Knopf",
+    "description": ""
+  },
+  "Description" :{
+    "message": "Fügt der Addressleiste einen ×-Knopf zum Schließen des Tabs hinzu",
+    "description": ""
+  },
+  "CloseTab": {
+    "message": "Tab schließen",
+    "description": ""
+  }
+}
